@@ -1,0 +1,2 @@
+# Star-Wars-Fan-Reviews
+In this project, sentiment analysis was performed using Survey Results conducted by FiveThirtyEight, with Star Wars movie watchers as the respondent. After some thorough cleaning and analysis, some useful information was gained on each movie's viewership, rating, and how each the data varied based on factors like gender, or whether the viewer considered themselves a fan of the franchise.
