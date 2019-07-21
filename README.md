@@ -4,9 +4,9 @@ In this project, sentiment analysis was performed using Survey Results conducted
 
 ## Data Cleaning
 
-- First, rows in which the `RespondentID` column was NaN were removed, since `RespondentID` is how survey-takers are distinguished.
+- First, rows in which the `RespondentID` column was `NaN` were removed, since `RespondentID` is how survey-takers are distinguished.
 - Certain columns that contained "Yes" and "No" values stored as strings were converted to Boolean values instead. 
-- Due to some column names being very long (e.g.`Which of the following Star Wars films have you seen? Please select all that apply.` being an entire column), column-renaming was also done.
+- Due to some column names being very long (e.g.`"Which of the following Star Wars films have you seen? Please select all that apply."` being an entire column), column-renaming was also done.
 - Columns in which responders ranked films from 1-6 were converted to numeric type.
 
 ## Visualizing fan sentiments
@@ -21,7 +21,7 @@ The x-axis values, e.g. `ranking_1`, `ranking_2`, etc, correspond to the Star Wa
 
 In general, it certainly seems like the original movies were more favorably rated (remember that Star Wars episodes 4-6 were made before episodes 1-3). **"The Empire Strikes Back" was the most highly rated with a mean score of 2.5, which means on average, most respondents rated it either their 1st or 2nd most favorite Star Wars movie.**
 
-### Moview Viewership
+### Movie Viewership
 
 ![Movie viewership](https://i.gyazo.com/fbcd26382d468dd67ea63ad48275746c.png)
 
@@ -39,13 +39,13 @@ When we narrowed down the respondents and considered only the opinions of those 
 
 There were noticeably more male than female viewers overall.
 
-### Viewership based on whether respondent identifies as a fan
+### Viewership based on whether respondent identified as a Fan
 
 ![fan or not](https://i.gyazo.com/0fc98f2e43200b0b237463cc4684a7e6.png)
 
 For viewership numbers between self-described fans and non-fans, the results are very predictable. **While fans tend to have watched the original movies more, they're also more likely to have seen all 6 movies**. For instance, the difference between the most viewed and least viewed movies by fans is only around 15-20%. In contrast, among non-fans while on average the original movies were seen more, non-fans are a lot more likely not to have seen one or more of the 6 movies. For instance, the difference between the most viewed and least viewed movies by non-fans is nearly 60%. This is likely in part because non-fans are less likely to see a movie out of interest in a franchise, and instead base their decision to see it around other factors like the movie's ratings.
 
-### Fan ratings based on whether respondent identifies as a fan
+### Fan ratings based on whether respondent identified as a Fan
 
 ![fan or not ratings](https://i.gyazo.com/f4d5a693a2f5b1769ed9b229f461bfc8.png)
 
